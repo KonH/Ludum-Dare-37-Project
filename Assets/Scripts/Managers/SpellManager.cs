@@ -22,12 +22,12 @@ public class SpellManager : MonoBehaviour {
 	}
 
 	void CreateSpells() {
-		//AddSpell("Transform", Spell_Transform);
-		//AddSpell("MassTransform", Spell_MassTransform);
-		//AddSpell("Boom", Spell_Boom);
-		//AddSpell("Kaboom", Spell_Kaboom);
-		//AddSpell("RoomShake", Spell_RoomShake);
-		//AddSpell("FloorChange", Spell_FloorChange);
+		AddSpell("Transform", Spell_Transform);
+		AddSpell("MassTransform", Spell_MassTransform);
+		AddSpell("Boom", Spell_Boom);
+		AddSpell("Kaboom", Spell_Kaboom);
+		AddSpell("RoomShake", Spell_RoomShake);
+		AddSpell("FloorChange", Spell_FloorChange);
 		AddSpell("MassFloorChange", Spell_MassFloorChange);
 	}
 

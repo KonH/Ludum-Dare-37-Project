@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114304762047410970}
   - component: {fileID: 65257019200873062}
   - component: {fileID: 208057649949638566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorItemUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 4118743799020332}
   - component: {fileID: 33029172840560712}
   - component: {fileID: 23994137422330436}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

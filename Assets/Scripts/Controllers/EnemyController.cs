@@ -5,16 +5,25 @@ using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyController : MonoBehaviour {
-
 	NavMeshAgent _agent;
 
-	// Use this for initialization
+	int _mask;
+
 	void Start () {
+		_mask = LayerMask.GetMask("Floor");
 		_agent = GetComponent<NavMeshAgent>();
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-		_agent.SetDestination(PlayerManager.Instance.PlayerTransform.position);
+		if( !CheckGround() ) {
+			_agent.enabled = false;
+		} else {
+			_agent.enabled = true;
+			_agent.SetDestination(PlayerManager.Instance.PlayerTransform.position);
+		}
+	}
+
+	bool CheckGround() {
+		return Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, 3, _mask);
 	}
 }
