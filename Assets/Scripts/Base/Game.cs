@@ -43,4 +43,24 @@ public class Game : ControllerHelper<IGame> {
 		}
 		return 0;
 	}
+
+	public static bool CanGetDoor() {
+		if ( Instance != null ) {
+			return Instance.CanGetDoor();
+		}
+		return true;
+	}
+
+	public static bool IsAutoSpellsEnabled() {
+		if( Instance != null ) {
+			return Instance.IsAutoSpellsEnabled();
+		}
+		return true;
+	}
+
+	public static void SetAutoSpells(bool value) {
+		if ( Instance != null ) {
+			Instance.SetAutoSpells(value);
+		}
+	}
 }

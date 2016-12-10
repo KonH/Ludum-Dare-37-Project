@@ -10,8 +10,9 @@ public class GameController : IGame {
 
 	public void PostInit() {}
 
-	GameMode _currentMode;
+	GameMode _currentMode = GameMode.Story;
 	int      _currentScore;
+	bool     _canSpell;
 
 	public void SelectMode(GameMode mode) {
 		_currentMode = mode;
@@ -23,6 +24,9 @@ public class GameController : IGame {
 	}
 
 	public void CalculateScore(float time) {
+		if( GetCurrentMode() == GameMode.Story ) {
+			_currentScore = 0;
+		}
 		_currentScore = Mathf.FloorToInt(time) * 50;
 		if( GetBestScore() < _currentScore ) {
 			var saveNode = Save.GetNode<SaveNode>();
@@ -32,6 +36,7 @@ public class GameController : IGame {
 			saveNode.BestScore = _currentScore;
 			Save.SaveNode(saveNode);
 		}
+		ResetRoomState();
 	}
 
 	public int GetCurrentScore() {
@@ -41,5 +46,24 @@ public class GameController : IGame {
 	public int GetBestScore() {
 		var saveNode = Save.GetNode<SaveNode>();
 		return saveNode != null ? saveNode.BestScore : 0;
+	}
+
+	public bool CanGetDoor() {
+		return GetCurrentMode() != GameMode.Story;
+	}
+
+	public bool IsAutoSpellsEnabled() {
+		if( GetCurrentMode() == GameMode.Story ) {
+			return _canSpell;
+		}
+		return true;
+	}
+
+	void ResetRoomState() {
+		_canSpell = false;
+	}
+
+	public void SetAutoSpells(bool value) {
+		_canSpell = value;
 	}
 }

@@ -10,4 +10,7 @@ public interface IGame:IController {
 	void CalculateScore(float time);
 	int GetCurrentScore();
 	int GetBestScore();
+	bool CanGetDoor();
+	bool IsAutoSpellsEnabled();
+	void SetAutoSpells(bool value);
 }

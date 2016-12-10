@@ -17,6 +17,9 @@ public class ScoreView : MonoBehaviour {
 	public void UpdateScore() {
 		var current = Game.GetCurrentScore();
 		var best = Game.GetBestScore();
+		if( current <= 0 ) {
+			_text.text = "";
+		}
 		_text.text = string.Format(_format, current, best);
 	}
 }

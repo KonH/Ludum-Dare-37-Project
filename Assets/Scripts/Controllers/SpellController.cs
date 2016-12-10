@@ -10,11 +10,13 @@ public class SpellController : MonoBehaviour {
 	float _timer;
 
 	void Update () {
-		_timer += Time.deltaTime;
-		NormalizedTime = _timer / Interval;
-		if( _timer > Interval ) {
-			_timer = 0;
-			ApplySpell();
+		if( Game.IsAutoSpellsEnabled() ) {
+			_timer += Time.deltaTime;
+			NormalizedTime = _timer / Interval;
+			if( _timer > Interval ) {
+				_timer = 0;
+				ApplySpell();
+			}
 		}
 	}
 

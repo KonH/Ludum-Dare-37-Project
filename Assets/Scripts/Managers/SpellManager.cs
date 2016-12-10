@@ -20,33 +20,34 @@ public class SpellManager : MonoBehaviour {
 	public SpellEvent OnSpellCast;
 
 	List<Spell> _spells = new List<Spell>();
+	SpellType[] _filter = new SpellType[0];
 
 	void Awake() {
 		Instance = this;
 		CreateSpells();
 	}
 
-	void AddSpell(string name, Action callback) {
-		_spells.Add(new Spell(name, callback));
+	void AddSpell(SpellType type, string name, Action callback) {
+		_spells.Add(new Spell(type, name, callback));
 	}
 
 	void CreateSpells() {
-		AddSpell("Something changed!", () => Spell_Transform(false));
-		AddSpell("Things are changed!", Spell_MassTransform);
-		AddSpell("Boom!", () => Spell_Boom(true, false));
-		AddSpell("Kaboom!", Spell_Kaboom);
-		AddSpell("Shake everything!", Spell_RoomShake);
-		AddSpell("Let's move!", Spell_RandomForces);
-		AddSpell("Upside-down!", Spell_GravityChange);
-		AddSpell("Bevare of holes!", () => Spell_FloorChange(false));
-		AddSpell("Holes everywhere!", Spell_MassFloorChange);
-		AddSpell("Fresh meat!", () => Spell_Generate(false));
-		AddSpell("Incoming forces!", Spell_MassGenerate);
+		AddSpell(SpellType.Transform, "Something changed!", () => Spell_Transform(false));
+		AddSpell(SpellType.Transform, "Things are changed!", Spell_MassTransform);
+		AddSpell(SpellType.Damage, "Boom!", () => Spell_Boom(true, false));
+		AddSpell(SpellType.Damage, "Kaboom!", Spell_Kaboom);
+		AddSpell(SpellType.Physics, "Shake everything!", Spell_RoomShake);
+		AddSpell(SpellType.Physics, "Let's move!", Spell_RandomForces);
+		AddSpell(SpellType.Physics, "Upside-down!", Spell_GravityChange);
+		AddSpell(SpellType.Floor, "Bevare of holes!", () => Spell_FloorChange(false));
+		AddSpell(SpellType.Floor, "Holes everywhere!", Spell_MassFloorChange);
+		AddSpell(SpellType.Generation, "Fresh meat!", () => Spell_Generate(false));
+		AddSpell(SpellType.Generation, "Incoming forces!", Spell_MassGenerate);
 	}
 
 	void Spell_Transform(bool look) {
 		var om = ObjectManager.Instance;
-		var sourceObj = RandomUtils.GetItem(RoomObject.Objects);
+		var sourceObj = RoomObject.GetRandom();
 		if( sourceObj != null ) {
 			var randObj = ObjectManager.Instance.GetPrefabExcept(sourceObj.Type);
 			if( randObj ) {
@@ -161,9 +162,29 @@ public class SpellManager : MonoBehaviour {
 		}
 	}
 
+	bool CanSpell(Spell spell) {
+		if(_filter.Length > 0 ) {
+			for( int i = 0; i < _filter.Length; i++ ) {
+				if( _filter[i] == spell.Type ) {
+					return true;
+				}
+			}
+			return false;
+		}
+		return true;
+	}
+
 	public void ApplySpell() {
 		var spell = RandomUtils.GetItem(_spells);
-		spell.Callback.Invoke();
-		OnSpellCast.Invoke(spell.Name);
+		if( CanSpell(spell) ) {
+			spell.Callback.Invoke();
+			OnSpellCast.Invoke(spell.Name); 
+		} else {
+			ApplySpell();
+		}
+	}
+
+	public void SetSpellFilter(params SpellType[] filter) {
+		_filter = filter;
 	}
 }
