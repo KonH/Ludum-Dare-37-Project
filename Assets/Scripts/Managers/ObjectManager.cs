@@ -41,14 +41,40 @@ public class ObjectManager : MonoBehaviour {
 	}
 
 	public GameObject TransformObject(GameObject oldObject, GameObject newObject) {
-		oldObject.SetActive(false);
+		TryHide(oldObject);
 		var instance = Instantiate(newObject, oldObject.transform.position, oldObject.transform.rotation) as GameObject;
 		instance.transform.SetParent(oldObject.transform.parent, true);
+		TryShow(instance);
 		return instance;
 	}
 
 	public GameObject CreateObject(GameObject prefab, Vector3 position) {
 		var instance = Instantiate(prefab, position, Quaternion.identity) as GameObject;
+		TryShow(instance);
 		return instance;
+	}
+
+	public void TryShow(GameObject go) {
+		var tween = go.GetComponent<ObjectTween>();
+		if( tween ) {
+			tween.OnShow();
+		}
+	}
+
+	public void TryHide(GameObject go) {
+		var tween = go.GetComponent<ObjectTween>();
+		if( tween ) {
+			var floorItem = go.GetComponent<FloorItem>();
+			if( floorItem ) {
+				floorItem.enabled = false;
+			}
+			var roomObject = go.GetComponent<RoomObject>();
+			if( roomObject ) {
+				roomObject.enabled = false;
+			}
+			tween.OnHide();
+		} else {
+			gameObject.SetActive(false);
+		}
 	}
 }

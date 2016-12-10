@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 65142208382458768}
   - component: {fileID: 114481443217142300}
   - component: {fileID: 208463086773461908}
+  - component: {fileID: 114870044944997166}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -411,6 +412,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 0
+--- !u!114 &114870044944997166
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1855250520122492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a46bcfce427344b5a183aa9f9879ae3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Duration: 0.5
 --- !u!208 &208463086773461908
 NavMeshObstacle:
   m_ObjectHideFlags: 1

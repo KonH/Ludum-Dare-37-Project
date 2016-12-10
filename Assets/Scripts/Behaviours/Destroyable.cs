@@ -29,7 +29,7 @@ public class Destroyable : MonoBehaviour {
 	public void GiveDamage(float value) {
 		HP -= value;
 		if( HP < 0 ) {
-			gameObject.SetActive(false);
+			ObjectManager.Instance.TryHide(gameObject);
 			OnDestroy.Invoke();
 		} else {
 			OnDamage.Invoke();
