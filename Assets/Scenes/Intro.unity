@@ -286,6 +286,24 @@ Prefab:
       propertyPath: m_FontData.m_Alignment
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114668164439506582, guid: a03824cffec2f44948846d79795e2a14,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0791419bdb6d940a8b721f4eb65a58d7,
+        type: 3}
+    - target: {fileID: 114939311572738360, guid: a03824cffec2f44948846d79795e2a14,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0791419bdb6d940a8b721f4eb65a58d7,
+        type: 3}
+    - target: {fileID: 114746309880768254, guid: a03824cffec2f44948846d79795e2a14,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 0791419bdb6d940a8b721f4eb65a58d7,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a03824cffec2f44948846d79795e2a14, type: 2}
   m_IsPrefabParent: 0

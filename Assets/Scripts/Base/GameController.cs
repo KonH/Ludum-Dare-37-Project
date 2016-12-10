@@ -26,6 +26,7 @@ public class GameController : IGame {
 	public void CalculateScore(float time) {
 		if( GetCurrentMode() == GameMode.Story ) {
 			_currentScore = 0;
+			return;
 		}
 		_currentScore = Mathf.FloorToInt(time) * 50;
 		if( GetBestScore() < _currentScore ) {
