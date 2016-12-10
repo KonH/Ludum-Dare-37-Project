@@ -14,10 +14,19 @@ public class PlayerManager : MonoBehaviour {
 	[HideInInspector]
 	public CollisionTracker ExitTracker;
 
+	public UnityEvent OnScoresUpdated;
+
 	void Awake() {
 		Instance = this;
 		PlayerTransform = Player.transform;
 		PlayerDestroyable = Player.GetComponent<Destroyable>();
 		ExitTracker = Player.GetComponent<CollisionTracker>();
+		PlayerDestroyable.OnDestroy.AddListener(() => OnGameEnded());
+		ExitTracker.OnEnter.AddListener(() => OnGameEnded());
+	}
+
+	void OnGameEnded() {
+		Game.CalculateScore(Time.timeSinceLevelLoad);
+		OnScoresUpdated.Invoke();
 	}
 }
