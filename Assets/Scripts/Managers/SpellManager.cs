@@ -31,16 +31,16 @@ public class SpellManager : MonoBehaviour {
 	}
 
 	void CreateSpells() {
-		AddSpell("Something changed!", () => Spell_Transform(true));
+		AddSpell("Something changed!", () => Spell_Transform(false));
 		AddSpell("Things are changed!", Spell_MassTransform);
-		AddSpell("Boom!", () => Spell_Boom(true, true));
+		AddSpell("Boom!", () => Spell_Boom(true, false));
 		AddSpell("Kaboom!", Spell_Kaboom);
 		AddSpell("Shake everything!", Spell_RoomShake);
 		AddSpell("Let's move!", Spell_RandomForces);
 		AddSpell("Upside-down!", Spell_GravityChange);
-		AddSpell("Bevare of holes!", () => Spell_FloorChange(true));
+		AddSpell("Bevare of holes!", () => Spell_FloorChange(false));
 		AddSpell("Holes everywhere!", Spell_MassFloorChange);
-		AddSpell("Fresh meat!", () => Spell_Generate(true));
+		AddSpell("Fresh meat!", () => Spell_Generate(false));
 		AddSpell("Incoming forces!", Spell_MassGenerate);
 	}
 
