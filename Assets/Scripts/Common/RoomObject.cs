@@ -6,6 +6,8 @@ public class RoomObject : MonoBehaviour {
 
 	public static List<RoomObject> Objects = new List<RoomObject>();
 
+	public ObjectType Type;
+
 	void OnEnable() {
 		Objects.Add(this);
 	}
