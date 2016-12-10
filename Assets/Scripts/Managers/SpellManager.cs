@@ -2,14 +2,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UDBase.Utils;
 using DG.Tweening;
 
 public class SpellManager : MonoBehaviour {
 
+	[System.Serializable]
+	public class SpellEvent : UnityEvent<string>
+	{
+	}
+
 	public static SpellManager Instance;
 
 	public float SizeDelta;
+
+	public SpellEvent OnSpellCast;
+
 	List<Spell> _spells = new List<Spell>();
 
 	void Awake() {
@@ -22,15 +31,17 @@ public class SpellManager : MonoBehaviour {
 	}
 
 	void CreateSpells() {
-		AddSpell("Transform", () => Spell_Transform(true));
-		AddSpell("MassTransform", Spell_MassTransform);
-		AddSpell("Boom", () => Spell_Boom(true, true));
-		AddSpell("Kaboom", Spell_Kaboom);
-		AddSpell("RoomShake", Spell_RoomShake);
-		AddSpell("FloorChange", () => Spell_FloorChange(true));
-		AddSpell("MassFloorChange", Spell_MassFloorChange);
-		AddSpell("Generate", () => Spell_Generate(true));
-		AddSpell("MassGenerate", Spell_MassGenerate);
+		AddSpell("Something changed!", () => Spell_Transform(true));
+		AddSpell("Things are changed!", Spell_MassTransform);
+		AddSpell("Boom!", () => Spell_Boom(true, true));
+		AddSpell("Kaboom!", Spell_Kaboom);
+		AddSpell("Shake everything!", Spell_RoomShake);
+		AddSpell("Let's move!", Spell_RandomForces);
+		AddSpell("Upside-down!", Spell_GravityChange);
+		AddSpell("Bevare of holes!", () => Spell_FloorChange(true));
+		AddSpell("Holes everywhere!", Spell_MassFloorChange);
+		AddSpell("Fresh meat!", () => Spell_Generate(true));
+		AddSpell("Incoming forces!", Spell_MassGenerate);
 	}
 
 	void Spell_Transform(bool look) {
@@ -110,6 +121,37 @@ public class SpellManager : MonoBehaviour {
 	void Spell_MassGenerate() {
 		MultiplySpell(() => Spell_Generate(false));
 	}
+		
+	float GetRandomValue() {
+		return UnityEngine.Random.Range(-1.0f, 1.0f);
+	}
+
+	Vector3 GetRandomDirection() {
+		return new Vector3(
+			GetRandomValue(),
+			GetRandomValue(),
+			GetRandomValue()
+		);
+				
+	}
+
+	void Spell_RandomForces() {
+		var force = 500;
+		var rbs = FindObjectsOfType<Rigidbody>();
+		for( int i = 0; i < rbs.Length; i++ ) {
+			rbs[i].AddForce(force * GetRandomDirection());
+		}
+	}
+
+	void Spell_GravityChange() {
+		var prevValue = Physics.gravity;
+		Physics.gravity = -Physics.gravity;
+		var seq = DOTween.Sequence();
+		seq.AppendInterval(1);
+		seq.AppendCallback(() => Physics.gravity = Vector3.zero);
+		seq.AppendInterval(0.5f);
+		seq.AppendCallback(() => Physics.gravity = prevValue);
+	}
 
 	void MultiplySpell(Action action, int count = 5, float interval = 0.25f) {
 		var seq = DOTween.Sequence();
@@ -122,5 +164,6 @@ public class SpellManager : MonoBehaviour {
 	public void ApplySpell() {
 		var spell = RandomUtils.GetItem(_spells);
 		spell.Callback.Invoke();
+		OnSpellCast.Invoke(spell.Name);
 	}
 }
