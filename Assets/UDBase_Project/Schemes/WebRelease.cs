@@ -6,7 +6,7 @@ using UDBase.Common;
 public class ProjectScheme : Scheme {
 
 	public ProjectScheme() {
-		// Add your initialization code here
+		AddController<Scene>(new DirectSceneLoader());
 	}
 }
 #endif

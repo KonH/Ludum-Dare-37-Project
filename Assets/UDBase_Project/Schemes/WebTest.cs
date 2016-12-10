@@ -2,11 +2,13 @@
 using UnityEngine;
 using System.Collections;
 using UDBase.Common;
+using UDBase.Controllers.SceneSystem;
 
 public class ProjectScheme : Scheme {
 
 	public ProjectScheme() {
-		// Add your initialization code here
+		AddController<Scene>(new DirectSceneLoader());
+
 	}
 }
 #endif
