@@ -24,9 +24,11 @@ public class SpellManager : MonoBehaviour {
 	void CreateSpells() {
 		//AddSpell("Transform", Spell_Transform);
 		//AddSpell("MassTransform", Spell_MassTransform);
-		AddSpell("Boom", Spell_Boom);
-		AddSpell("Kaboom", Spell_Kaboom);
-		AddSpell("RoomShake", Spell_RoomShake);
+		//AddSpell("Boom", Spell_Boom);
+		//AddSpell("Kaboom", Spell_Kaboom);
+		//AddSpell("RoomShake", Spell_RoomShake);
+		//AddSpell("FloorChange", Spell_FloorChange);
+		AddSpell("MassFloorChange", Spell_MassFloorChange);
 	}
 
 	void Spell_Transform() {
@@ -35,8 +37,7 @@ public class SpellManager : MonoBehaviour {
 		if( sourceObj != null ) {
 			var randObj = ObjectManager.Instance.GetPrefabExcept(sourceObj.Type);
 			if( randObj ) {
-				var prefab = randObj.gameObject;
-				om.TransformObject(sourceObj.gameObject, prefab);
+				om.TransformObject(sourceObj.gameObject, randObj);
 			}
 		}
 	}
@@ -64,6 +65,21 @@ public class SpellManager : MonoBehaviour {
 		for( int i = 0; i < rbs.Length; i++ ) {
 			rbs[i].AddForce(force);
 		}
+	}
+
+	void Spell_FloorChange() {
+		var om = ObjectManager.Instance;
+		var sourceObj = RandomUtils.GetItem(FloorItem.Items);
+		if( sourceObj != null ) {
+			var randObj = ObjectManager.Instance.GetPrefabExcept(sourceObj.Type);
+			if( randObj ) {
+				om.TransformObject(sourceObj.gameObject, randObj);
+			}
+		}
+	}
+
+	void Spell_MassFloorChange() {
+		MultiplySpell(Spell_FloorChange);
 	}
 
 	void MultiplySpell(Action action, int count = 5, float interval = 0.25f) {

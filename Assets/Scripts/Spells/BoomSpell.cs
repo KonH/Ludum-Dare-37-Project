@@ -19,7 +19,6 @@ public class BoomSpell : MonoBehaviour {
 	void OnCollisionEnter(Collision other) {
 		var go = other.gameObject;
 		var destroyable = go.GetComponent<Destroyable>();
-		var rb = go.GetComponent<Rigidbody>();
 		var coeff = 1 - (Time.time - _startTime) / SizeTime;
 		if( destroyable ) {
 			destroyable.GiveDamage(MaxDamage * coeff);

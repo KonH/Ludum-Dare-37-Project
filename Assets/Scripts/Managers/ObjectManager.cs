@@ -9,19 +9,31 @@ public class ObjectManager : MonoBehaviour {
 
 	public List<RoomObject> Prefabs;
 	public GameObject BoomPrefab;
+	public List<FloorItem> FloorPrefabs; 
 
-	List<RoomObject> _tmpPrefabs = new List<RoomObject>();
+	List<GameObject> _tmpPrefabs = new List<GameObject>();
 
 	void Awake() {
 		Instance = this;
 	}
 		
-	public RoomObject GetPrefabExcept(ObjectType type) {
+	public GameObject GetPrefabExcept(ObjectType type) {
 		_tmpPrefabs.Clear();
 		for( int i = 0; i < Prefabs.Count; i++ ) {
 			var prefab = Prefabs[i];
 			if( prefab.Type != type ) {
-				_tmpPrefabs.Add(prefab);
+				_tmpPrefabs.Add(prefab.gameObject);
+			}
+		}
+		return RandomUtils.GetItem(_tmpPrefabs);
+	}
+
+	public GameObject GetPrefabExcept(FloorType type) {
+		_tmpPrefabs.Clear();
+		for( int i = 0; i < FloorPrefabs.Count; i++ ) {
+			var prefab = FloorPrefabs[i];
+			if( prefab.Type != type ) {
+				_tmpPrefabs.Add(prefab.gameObject);
 			}
 		}
 		return RandomUtils.GetItem(_tmpPrefabs);
