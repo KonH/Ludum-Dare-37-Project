@@ -9,6 +9,7 @@ public class ObjectManager : MonoBehaviour {
 
 	public List<RoomObject> Prefabs;
 	public GameObject BoomPrefab;
+	public GameObject SmallBoomPrefab;
 	public List<FloorItem> FloorPrefabs; 
 
 	List<GameObject> _tmpPrefabs = new List<GameObject>();
@@ -39,13 +40,15 @@ public class ObjectManager : MonoBehaviour {
 		return RandomUtils.GetItem(_tmpPrefabs);
 	}
 
-	public void TransformObject(GameObject oldObject, GameObject newObject) {
+	public GameObject TransformObject(GameObject oldObject, GameObject newObject) {
 		oldObject.SetActive(false);
 		var instance = Instantiate(newObject, oldObject.transform.position, oldObject.transform.rotation) as GameObject;
 		instance.transform.SetParent(oldObject.transform.parent, true);
+		return instance;
 	}
 
-	public void CreateObject(GameObject prefab, Vector3 position) {
-		Instantiate(prefab, position, Quaternion.identity);
+	public GameObject CreateObject(GameObject prefab, Vector3 position) {
+		var instance = Instantiate(prefab, position, Quaternion.identity) as GameObject;
+		return instance;
 	}
 }
