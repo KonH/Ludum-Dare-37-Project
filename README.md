@@ -1,7 +1,7 @@
 # Ludum-Dare-37-Project
-Game project for [https://ldjam.com](Ludum Dare 37)
+Game project for [Ludum Dare 37](https://ldjam.com)
 
 ## Dependencies:
 
-- [https://github.com/KonH/UDBase](UDBase)
-- [https://github.com/Demigiant/dotween](Dotween)
+- [UDBase](https://github.com/KonH/UDBase)
+- [Dotween](https://github.com/Demigiant/dotween)
