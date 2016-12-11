@@ -304,24 +304,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!1 &1476914144382088
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 224620728020644308}
-  - component: {fileID: 222479345321265884}
-  - component: {fileID: 114683548736188458}
-  - component: {fileID: 114468656920402102}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1489852797776356
 GameObject:
   m_ObjectHideFlags: 1
@@ -375,24 +357,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1544517401752102
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 224776212423087138}
-  - component: {fileID: 222127552923475464}
-  - component: {fileID: 114088035237483636}
-  - component: {fileID: 114591062309350420}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1545830649773714
 GameObject:
   m_ObjectHideFlags: 1
@@ -404,22 +368,6 @@ GameObject:
   - component: {fileID: 222063751697420574}
   m_Layer: 5
   m_Name: 19
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1552125335897302
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 224349719545626716}
-  - component: {fileID: 222616582955474404}
-  m_Layer: 5
-  m_Name: 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -590,22 +538,6 @@ GameObject:
   - component: {fileID: 222798487645039050}
   m_Layer: 5
   m_Name: 6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!1 &1746009351448738
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 224424566846219644}
-  - component: {fileID: 222600962336958956}
-  m_Layer: 5
-  m_Name: 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -783,14 +715,12 @@ MonoBehaviour:
   - {fileID: 1698452682981844}
   - {fileID: 1307077396583508}
   - {fileID: 1120485469026004}
-  - {fileID: 1552125335897302}
   - {fileID: 1349210758362660}
   - {fileID: 1688982312958330}
   - {fileID: 1454626540352532}
   - {fileID: 1680602433720804}
   - {fileID: 1867700831894030}
   - {fileID: 1406924455822114}
-  - {fileID: 1746009351448738}
   - {fileID: 1107835587606986}
   - {fileID: 1545830649773714}
 --- !u!114 &114077568148936154
@@ -883,39 +813,6 @@ MonoBehaviour:
   Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
---- !u!114 &114088035237483636
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1544517401752102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 0791419bdb6d940a8b721f4eb65a58d7, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'Ben: Wow, thanks, Ms. Wizard! I''m on my way!'
 --- !u!114 &114123510679001764
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -949,7 +846,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'The Big Boss: You must to convince this client. It is very important to
-    the company.'
+    our company.'
 --- !u!114 &114131842290043912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1192,7 +1089,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Ben: Hello, Mr. Wizard! Do you interesting in approved credit with low
+  m_Text: 'Ben: Hello, Mr. Wizard! Do you interested in an approved credit with low
     percents?'
 --- !u!114 &114262869915467346
 MonoBehaviour:
@@ -1226,7 +1123,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Each day the Ben calls to Mr. Wizard and do not get any success.
+  m_Text: Every day Ben calls to Mr. Wizard and does not achieve any success.
 --- !u!114 &114282799154922562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1292,7 +1189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Ben: Today we can introduce to you very special offer, give me a minute...'
+  m_Text: 'Ben: But it is a very special offer, give me a minute...'
 --- !u!114 &114315860871479270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1355,43 +1252,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Ben: So sad, It could be great deal!'
+  m_Text: 'Ben: So sad, It could be a great deal!'
 --- !u!114 &114456333648114452
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1174349917630764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61f4e864264a549b8ae3a2fcaeeeff3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnHide:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114018929460702480}
-        m_MethodName: TryShowNext
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  Interval: 0.06
-  HideInterval: 1.5
-  AutoHide: 1
---- !u!114 &114468656920402102
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1476914144382088}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61f4e864264a549b8ae3a2fcaeeeff3e, type: 3}
@@ -1505,7 +1372,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The Wizard: Great Merlin! I so tired about you and your old money structures!'
+  m_Text: 'The Wizard: Merlin''s pants! I am so tired about you and your old money
+    structures!'
 --- !u!114 &114508218620195376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1548,36 +1416,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Room
---- !u!114 &114591062309350420
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1544517401752102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61f4e864264a549b8ae3a2fcaeeeff3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnHide:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114018929460702480}
-        m_MethodName: TryShowNext
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  Interval: 0.06
-  HideInterval: 1.5
-  AutoHide: 1
 --- !u!114 &114606386149433858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1610,8 +1448,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The Wizard: But you annoyed me so hard so I invite you to my house to sign
-    a papers in pleasant atmosphere.'
+  m_Text: Ben decided to go to Mr. Wizard's house and try to convince him for the
+    last time.
 --- !u!114 &114612991105867750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1726,7 +1564,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: But when he came, the magician disappeared into thin air and left him alone.
+  m_Text: But when he came, the magician disappeared and left him alone.
 --- !u!114 &114678233798441462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1748,40 +1586,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &114683548736188458
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1476914144382088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 0791419bdb6d940a8b721f4eb65a58d7, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'His family needs money desperately, so he couldn''t just failed and get
-    fired. '
 --- !u!114 &114711751382955152
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1880,7 +1684,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The Wizard: Despite of my antique profession, I used Bitcoin.'
+  m_Text: 'The Wizard: I use Bitcoin!'
 --- !u!114 &114823067766170358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2039,8 +1843,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The Wizard: That''s you again? I do not want to any money services, I told
-    you!'
+  m_Text: 'The Wizard: That''s you again? I do not want to get any money services,
+    I told you!'
 --- !u!114 &114939311572738360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2073,7 +1877,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: And now Ben need to find a way back to real life...
+  m_Text: And now Ben needs to find a way back to real life...
 --- !u!114 &114942193065106214
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2218,12 +2022,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1507066476464122}
---- !u!222 &222127552923475464
-CanvasRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1544517401752102}
 --- !u!222 &222133620068817138
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -2290,12 +2088,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1454626540352532}
---- !u!222 &222479345321265884
-CanvasRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1476914144382088}
 --- !u!222 &222492994077366256
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -2314,12 +2106,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1107835587606986}
---- !u!222 &222600962336958956
-CanvasRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1746009351448738}
 --- !u!222 &222601763981130216
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -2338,12 +2124,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1638884470086022}
---- !u!222 &222616582955474404
-CanvasRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1552125335897302}
 --- !u!222 &222672378918401180
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -2594,7 +2374,7 @@ RectTransform:
   m_Children:
   - {fileID: 224222462885978332}
   m_Father: {fileID: 224624962942129586}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2709,25 +2489,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!224 &224349719545626716
-RectTransform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1552125335897302}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99999905, y: 0.99999905, z: 0.99999905}
-  m_Children:
-  - {fileID: 224620728020644308}
-  m_Father: {fileID: 224624962942129586}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000091552734, y: -0.000015258789}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224352452794079288
 RectTransform:
   m_ObjectHideFlags: 1
@@ -2740,7 +2501,7 @@ RectTransform:
   m_Children:
   - {fileID: 224785215587329742}
   m_Father: {fileID: 224624962942129586}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2785,25 +2546,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!224 &224424566846219644
-RectTransform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1746009351448738}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99999905, y: 0.99999905, z: 0.99999905}
-  m_Children:
-  - {fileID: 224776212423087138}
-  m_Father: {fileID: 224624962942129586}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000091552734, y: -0.000015258789}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224429226326567440
 RectTransform:
   m_ObjectHideFlags: 1
@@ -2835,7 +2577,7 @@ RectTransform:
   m_Children:
   - {fileID: 224275452107196936}
   m_Father: {fileID: 224624962942129586}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2892,7 +2634,7 @@ RectTransform:
   - {fileID: 224528104617592488}
   - {fileID: 224205083712597202}
   m_Father: {fileID: 224624962942129586}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2937,24 +2679,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!224 &224620728020644308
-RectTransform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1476914144382088}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 224349719545626716}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 300}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224622040432614396
 RectTransform:
   m_ObjectHideFlags: 1
@@ -2967,7 +2691,7 @@ RectTransform:
   m_Children:
   - {fileID: 224990509945980342}
   m_Father: {fileID: 224624962942129586}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2993,14 +2717,12 @@ RectTransform:
   - {fileID: 224083865414806294}
   - {fileID: 224845889475876096}
   - {fileID: 224777738344179760}
-  - {fileID: 224349719545626716}
   - {fileID: 224912814478868048}
   - {fileID: 224220438441076076}
   - {fileID: 224747768518586384}
   - {fileID: 224352452794079288}
   - {fileID: 224485666077999504}
   - {fileID: 224961255451142944}
-  - {fileID: 224424566846219644}
   - {fileID: 224622040432614396}
   - {fileID: 224526911787477504}
   m_Father: {fileID: 224568806398373762}
@@ -3077,30 +2799,12 @@ RectTransform:
   m_Children:
   - {fileID: 224116850457330476}
   m_Father: {fileID: 224624962942129586}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -0.000091552734, y: -0.000015258789}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!224 &224776212423087138
-RectTransform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1544517401752102}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 224424566846219644}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224777738344179760
 RectTransform:
@@ -3243,7 +2947,7 @@ RectTransform:
   m_Children:
   - {fileID: 224258852926784390}
   m_Father: {fileID: 224624962942129586}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3262,7 +2966,7 @@ RectTransform:
   m_Children:
   - {fileID: 224843590768157748}
   m_Father: {fileID: 224624962942129586}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

@@ -47,13 +47,13 @@ public class TaskManager : MonoBehaviour {
 
 	void StartTasks() {
 		_seq = DOTween.Sequence();
-		Text("Ben hear the voice in his head:");
+		Text("Ben hears a voice in his head:");
 		Wait(2.5f);
 		Text("Well, you are in my house.");
 		Wait(2.5f);
-		Text("And you can't call me after this day.");
+		Text("And you would't call me after this day.");
 		Wait(3.5f);
-		Text("My chairs is cozy, but don't underestimate it.");
+		Text("My chairs are cozy, but don't underestimate them.");
 		Wait(3.5f);
 		Text("Let me show you.");
 		Wait(2.5f);
@@ -63,7 +63,7 @@ public class TaskManager : MonoBehaviour {
 
 		Text("Hmm...");
 		Wait(1.5f);
-		Text("You are not so weak as I expected.");
+		Text("You are not as weak as I expected.");
 		Wait(2.5f);
 		Text("But can you solve something harder?");
 		Wait(2.5f);
@@ -74,7 +74,7 @@ public class TaskManager : MonoBehaviour {
 		Wait(_stepTime/2);
 		Action(StopStep);
 
-		Text("Ha-ha! You are tough one.");
+		Text("Ha-ha! You are a tough one.");
 		Wait(2.5f);
 		Text("But do you now how it is if your floor is out from under the feet?");
 		Wait(3.5f);
@@ -89,13 +89,13 @@ public class TaskManager : MonoBehaviour {
 		Wait(1.5f);
 		Text("Please don't think I like to torture people.");
 		Wait(4f);
-		Text("This room is an very unstable magical place.");
+		Text("This room is a very unstable magical place.");
 		Wait(3.5f);
 		Text("And I couldn't control it permanently.");
 		Wait(3.5f);
-		Text("Opps.");
+		Text("Oops.");
 		Wait(1.5f);
-		Text("Sorry, but this spheres may hurts.");
+		Text("Attention, these spheres may hurt.");
 		Wait(3.5f);
 		Action(StartMediumTransforms);
 		Wait(0.5f);
@@ -130,7 +130,7 @@ public class TaskManager : MonoBehaviour {
 		Wait(3.5f);
 		Text("So no more phone calls, alright?");
 		Wait(2.5f);
-		Text("You can leave this beautiful place, of course.");
+		Text("You can leave this hospitable place, of course.");
 		Wait(2.5f);
 		Action(OpenDoor);
 	}
