@@ -4,11 +4,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum SpellType {
-	Transform,
-	Physics,
-	Floor,
-	Damage,
-	Generation
+	Transform = 0,
+	Physics = 1,
+	Floor = 2,
+	Damage = 3,
+	Generation = 4,
+	Bonus_Shield = 5,
+	Bonus_Heal = 6,
+	Bonus_Kill = 7,
+	Bonus_Weapon = 8,
+	SpawnBonus = 9
 }
 
 public class Spell {

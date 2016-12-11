@@ -12,6 +12,9 @@ public class CollisionDamagable : MonoBehaviour {
 
 	float _lastDamageTime;
 
+	void Start() {
+	}
+
 	bool CanDamage() {
 		return Time.time > (_lastDamageTime + Cooldown);
 	}

@@ -132,22 +132,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3649f25afabb49a69274313c85706b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TaskText: {fileID: 0}
   TaskChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SetText
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: TaskManager+TaskChangedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  HasTimer: 0
+  TimerValue: 0
+  MaxTimerValue: 0
 --- !u!114 &114992897812569316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -165,3 +158,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: SpellManager+SpellEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  Bonuses:
+  - {fileID: 1214682127637410, guid: 0f1152fcc8f0d4a2a8af8c721cff7add, type: 2}
+  - {fileID: 1245315642244502, guid: cf0a7d38ae0c1463aab7efca82da584d, type: 2}
+  - {fileID: 1785498839412842, guid: 75c383a96ce324caa851184a564491e6, type: 2}
+  - {fileID: 1540741586536026, guid: 634a2883224eb45d7b44bb84a97e9794, type: 2}

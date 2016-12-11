@@ -8,6 +8,7 @@ public class Destroyable : MonoBehaviour {
 	public UnityEvent OnDestroy;
 	public float HP;
 	public float MaxHP;
+	public bool CanDamage = true;
 
 	public float NormalizedHP {
 		get {
@@ -27,6 +28,9 @@ public class Destroyable : MonoBehaviour {
 	}
 	
 	public void GiveDamage(float value) {
+		if( !CanDamage ) {
+			return;
+		}
 		HP -= value;
 		if( HP < 0 ) {
 			ObjectManager.Instance.TryHide(gameObject);
