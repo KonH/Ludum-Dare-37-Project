@@ -43,21 +43,22 @@ public class TaskManager : MonoBehaviour {
 
 	void StartTasks() {
 		var seq = DOTween.Sequence();
+		var time = 1.0f;
 		seq.AppendCallback(() => AddText("Well, you are in my house."));
-		seq.AppendInterval(2);
+		seq.AppendInterval(time * 2.5f);
 		seq.AppendCallback(() => AddText("My chairs is cozy, but don't underestimate it."));
-		seq.AppendInterval(3);
+		seq.AppendInterval(time * 3.5f);
 		seq.AppendCallback(() => AddText("Let me show you."));
-		seq.AppendInterval(2);
+		seq.AppendInterval(time * 2.5f);
 		seq.AppendCallback(() => StartTransforms());
 		seq.AppendInterval(30);
 		seq.AppendCallback(() => StopTransforms());
 		seq.AppendCallback(() => AddText("Hmm..."));
-		seq.AppendInterval(1);
+		seq.AppendInterval(time * 1.5f);
 		seq.AppendCallback(() => AddText("You are not so weak as I expected."));
-		seq.AppendInterval(2);
+		seq.AppendInterval(time * 2.5f);
 		seq.AppendCallback(() => AddText("You can leave this beautiful place."));
-		seq.AppendInterval(2);
+		seq.AppendInterval(time * 2.5f);
 		seq.AppendCallback(() => OpenDoor());
 	}
 
