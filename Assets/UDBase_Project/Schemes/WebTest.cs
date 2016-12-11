@@ -13,6 +13,7 @@ public class ProjectScheme : Scheme {
 		AddController<Save>(save);
 		AddController<Scene>(new DirectSceneLoader());
 		AddController<Game>(new GameController());
+		AddController<Music>(new MusicController());
 	}
 }
 #endif
