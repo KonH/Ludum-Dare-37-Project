@@ -65,6 +65,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1053746931117002
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224151550831143416}
+  - component: {fileID: 222814044393452954}
+  - component: {fileID: 114711751382955152}
+  - component: {fileID: 114962263943765210}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1105895167248656
 GameObject:
   m_ObjectHideFlags: 1
@@ -687,9 +705,8 @@ GameObject:
   - component: {fileID: 224676275915957130}
   - component: {fileID: 222133620068817138}
   - component: {fileID: 114877538755692188}
-  - component: {fileID: 114962263943765210}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -803,7 +820,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!114 &114080630830347778
@@ -833,7 +850,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!114 &114084017731880708
@@ -863,7 +880,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!114 &114088035237483636
@@ -960,7 +977,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!114 &114136509212416292
@@ -1064,7 +1081,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!114 &114220721139368758
@@ -1094,7 +1111,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!114 &114247929849399774
@@ -1124,7 +1141,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!114 &114253584008738860
@@ -1303,7 +1320,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!114 &114386970913361682
@@ -1366,7 +1383,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!114 &114468656920402102
@@ -1396,7 +1413,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!114 &114469169960833004
@@ -1453,7 +1470,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!114 &114475706542248768
@@ -1516,7 +1533,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!114 &114531776933772330
@@ -1558,7 +1575,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!114 &114606386149433858
@@ -1611,7 +1628,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 0
 --- !u!114 &114655705712007768
@@ -1674,7 +1691,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!114 &114668164439506582
@@ -1765,6 +1782,39 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'His family needs money desperately, so he couldn''t just failed and get
     fired. '
+--- !u!114 &114711751382955152
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1053746931117002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 0791419bdb6d940a8b721f4eb65a58d7, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Phone rings...
 --- !u!114 &114746309880768254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1858,7 +1908,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!114 &114870911665823230
@@ -1888,7 +1938,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.15
   AutoHide: 1
 --- !u!114 &114877538755692188
@@ -1916,14 +1966,14 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
+    m_MaxSize: 30
+    m_Alignment: 8
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Phone rings...
+  m_Text: Press any key to skip...
 --- !u!114 &114902140778400984
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2062,7 +2112,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1863878222149934}
+  m_GameObject: {fileID: 1053746931117002}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61f4e864264a549b8ae3a2fcaeeeff3e, type: 3}
@@ -2084,7 +2134,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!114 &114964011813023946
@@ -2141,7 +2191,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Interval: 0.075
+  Interval: 0.06
   HideInterval: 1.5
   AutoHide: 1
 --- !u!222 &222043090766772728
@@ -2360,6 +2410,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1285120444974530}
+--- !u!222 &222814044393452954
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1053746931117002}
 --- !u!222 &222814232208804812
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -2464,6 +2520,24 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224747768518586384}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 500, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224151550831143416
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1053746931117002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224381090097935562}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2683,6 +2757,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 224151550831143416}
   - {fileID: 224676275915957130}
   m_Father: {fileID: 224624962942129586}
   m_RootOrder: 0
@@ -2960,18 +3035,18 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1863878222149934}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.99999905, y: 0.99999905, z: 0.99999905}
   m_Children: []
   m_Father: {fileID: 224381090097935562}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 300}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -10, y: 10}
+  m_SizeDelta: {x: 600, y: 300}
+  m_Pivot: {x: 1, y: 0}
 --- !u!224 &224722979255006108
 RectTransform:
   m_ObjectHideFlags: 1

@@ -47,6 +47,13 @@ public class PrintText : MonoBehaviour {
 		Animate();
 	}
 
+	void OnDisable() {
+		if( _seq != null ) {
+			_seq.Kill();
+			_seq = null;
+		}
+	}
+
 	void Animate() {
 		if( _seq != null ) {
 			_seq.Kill();
@@ -54,9 +61,10 @@ public class PrintText : MonoBehaviour {
 		}
 		_seq = DOTween.Sequence();
 		_text.text = "";
+		_tempText = "";
 		for( int i = 0; i < _fullText.Length; i++ ) {
 			char ch = _fullText[i];
-			_seq.AppendCallback(() => { _text.text += ch; OnTextUpdate(); });
+			_seq.AppendCallback(() => { OnTextUpdate(ch); });
 			_seq.AppendInterval(Interval);
 		}
 		_seq.AppendInterval(HideInterval);
@@ -66,10 +74,12 @@ public class PrintText : MonoBehaviour {
 		_seq.AppendCallback(() => OnHide.Invoke());
 	}
 
-	void OnTextUpdate() {
+	void OnTextUpdate(char ch) {
+		_tempText += ch;
+		var current = _tempText;
 		for( int i = 0; i < _names.Length; i++ ) {
-			var _current = _text.text;
-			_text.text = _current.Replace(_names[i], _replaces[i]);
+			current = current.Replace(_names[i], _replaces[i]);
 		}
+		_text.text = current;
 	}
 }
