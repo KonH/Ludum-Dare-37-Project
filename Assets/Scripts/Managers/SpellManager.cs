@@ -246,6 +246,11 @@ public class SpellManager : MonoBehaviour {
 	}
 
 	public void SetSpellFilter(params SpellType[] filter) {
+		var s = "New filter: ";
+		for( int i = 0; i < filter.Length; i++) {
+			s += filter[i] + "; ";
+		}
+		Debug.Log(s);
 		_filter = filter;
 	}
 }

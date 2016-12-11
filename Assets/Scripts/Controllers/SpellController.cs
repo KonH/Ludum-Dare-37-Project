@@ -17,6 +17,9 @@ public class SpellController : MonoBehaviour {
 				_timer = 0;
 				ApplySpell();
 			}
+		} else {
+			_timer = 0;
+			NormalizedTime = 0;
 		}
 	}
 

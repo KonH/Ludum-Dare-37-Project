@@ -16,7 +16,7 @@ public class CollisionDamagable : MonoBehaviour {
 	}
 
 	bool CanDamage() {
-		return Time.time > (_lastDamageTime + Cooldown);
+		return enabled && (Time.time > (_lastDamageTime + Cooldown));
 	}
 
     void OnCollisionStay(Collision other) {

@@ -19,6 +19,19 @@ public class PrintText : MonoBehaviour {
 	string _tempText;
 	Sequence _seq;
 
+	string[] _names = {
+		"Ben", 
+		"The Wizard",
+		"Mr. Wizard", 
+		"The Big Boss"
+	};
+	string[] _replaces = {
+		"<color=green>Ben</color>",
+		"<color=blue>The Wizard</color>",
+		"<color=blue>Mr. Wizard</color>",
+		"<color=red>The Big Boss</color>"
+	};
+
 	void Awake() {
 		_text = GetComponent<Text>();
 		_fullText = _text.text;
@@ -43,7 +56,7 @@ public class PrintText : MonoBehaviour {
 		_text.text = "";
 		for( int i = 0; i < _fullText.Length; i++ ) {
 			char ch = _fullText[i];
-			_seq.AppendCallback(() => _text.text += ch);
+			_seq.AppendCallback(() => { _text.text += ch; OnTextUpdate(); });
 			_seq.AppendInterval(Interval);
 		}
 		_seq.AppendInterval(HideInterval);
@@ -51,5 +64,12 @@ public class PrintText : MonoBehaviour {
 			_seq.Append(transform.DOScale(0, 0.5f).SetEase(Ease.InElastic));
 		}
 		_seq.AppendCallback(() => OnHide.Invoke());
+	}
+
+	void OnTextUpdate() {
+		for( int i = 0; i < _names.Length; i++ ) {
+			var _current = _text.text;
+			_text.text = _current.Replace(_names[i], _replaces[i]);
+		}
 	}
 }
