@@ -11,12 +11,10 @@ public class RandomColorImage : MonoBehaviour {
 
 	Image _img = null;
 
-	// Use this for initialization
-	void Start () {
-		_img = GetComponent<Image>();	
-	}
-
 	void OnEnable() {
+		if( !_img ) {
+			_img = GetComponent<Image>();
+		}
 		_img.color = RandomUtils.GetItem(Colors);
 	}
 }
