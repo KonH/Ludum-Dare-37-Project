@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using DG.Tweening;
 
 public class WeaponSpell : MonoBehaviour {
 
+	public UnityEvent OnAppear;
 	public GameObject Indicator;
 
 	Sequence _seq = null;
@@ -22,6 +24,7 @@ public class WeaponSpell : MonoBehaviour {
 
 	void StartEffect() {
 		Indicator.SetActive(true);
+		OnAppear.Invoke();
 	}
 
 	void EndEffect() {

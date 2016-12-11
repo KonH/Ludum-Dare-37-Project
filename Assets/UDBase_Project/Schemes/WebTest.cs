@@ -14,6 +14,7 @@ public class ProjectScheme : Scheme {
 		AddController<Scene>(new DirectSceneLoader());
 		AddController<Game>(new GameController());
 		AddController<Music>(new MusicController());
+		AddController<Sound>(new SoundController());
 	}
 }
 #endif

@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using DG.Tweening;
 
 public class ShieldSpell : MonoBehaviour {
 
+	public UnityEvent OnAppear;
 	public GameObject Indicator;
 
 	Sequence _seq = null;
@@ -23,6 +25,7 @@ public class ShieldSpell : MonoBehaviour {
 	void StartEffect() {
 		GetComponent<Destroyable>().CanDamage = false;
 		Indicator.SetActive(true);
+		OnAppear.Invoke();
 	}
 
 	void EndEffect() {
