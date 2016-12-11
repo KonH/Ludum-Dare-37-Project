@@ -184,6 +184,8 @@ public class TaskManager : MonoBehaviour {
 				i--;
 			}
 		}
+		var destroyable = PlayerManager.Instance.PlayerDestroyable;
+		destroyable.HP = destroyable.MaxHP;
 	}
 
 	void OpenDoor() {
