@@ -10,7 +10,7 @@ public class GameController : IGame {
 
 	public void PostInit() {}
 
-	GameMode _currentMode = GameMode.Story;
+	GameMode _currentMode = GameMode.Survival;
 	int      _currentScore;
 	bool     _canSpell;
 

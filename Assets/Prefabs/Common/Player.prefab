@@ -995,7 +995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d07688ef17144059a15f9f18eb803c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 5
+  Damage: 15
   Cooldown: 0.25
   OnAttack:
     m_PersistentCalls:
@@ -1025,6 +1025,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Duration: 0.5
+  Auto: 0
+  MinStep: 0
+  MaxStep: 0
 --- !u!114 &114831438663732004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1061,6 +1064,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnExit:
+    m_PersistentCalls:
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   TagFilter: Finish
