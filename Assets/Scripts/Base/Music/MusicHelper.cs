@@ -13,6 +13,7 @@ public class MusicHelper : MonoBehaviour {
 
 	void Start () {
 		_source = GetComponent<AudioSource>();
+		enabled = Music.IsEnabled();
 	}
 
 	void Update() {
@@ -29,6 +30,19 @@ public class MusicHelper : MonoBehaviour {
 			_current = newTrack;
 			_source.clip = _current;
 			_source.Play();
+		}
+	}
+
+	public void SetState(bool state) {
+		enabled = state;
+		if( state ) {
+			if( _source.clip ) {
+				_source.UnPause();
+			} else {
+				PlayNewTrack();
+			}
+		} else {
+			_source.Pause();
 		}
 	}
 }

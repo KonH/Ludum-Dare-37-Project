@@ -6,4 +6,6 @@ using UDBase.Controllers;
 public interface ISound:IController {
 
 	void Play(SoundType type);
+	void SwitchState();
+	bool IsEnabled();
 }

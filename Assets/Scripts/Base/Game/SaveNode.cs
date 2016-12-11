@@ -4,4 +4,6 @@ using UnityEngine;
 
 public class SaveNode {
 	public int BestScore;
+	public bool SoundEnabled = true;
+	public bool MusicEnabled = true;
 }

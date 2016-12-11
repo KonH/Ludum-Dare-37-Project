@@ -17,6 +17,9 @@ public class SoundEvent : MonoBehaviour {
 	}
 
 	public void Play() {
+		if( !Sound.IsEnabled() ) {
+			return;
+		}
 		if( !_source.isPlaying && (_lastTime + _source.clip.length < Time.time) ) {
 			_source.Play();
 			_lastTime = Time.time;

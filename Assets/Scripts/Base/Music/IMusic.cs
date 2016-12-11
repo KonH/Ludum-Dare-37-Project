@@ -4,4 +4,7 @@ using UnityEngine;
 using UDBase.Controllers;
 
 public interface IMusic:IController {
+
+	void SwitchState();
+	bool IsEnabled();
 }
