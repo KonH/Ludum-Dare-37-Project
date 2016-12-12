@@ -1,11 +1,11 @@
-# The Wizard Workshop
+# The Magic Workshop
 Game project for **Compo** at [Ludum Dare 37](https://ldjam.com), made in ~26 hours from scratch.
 
 You can play it here - [https://konh.itch.io/the-magic-workshop](https://konh.itch.io/the-magic-workshop).
 
 **Find a way to escape the weird place!**
 
-The Wizard Workshop is an story about Ben, who was an ordinary bank clerk and the Wizard lived in strange house. Ben got in Wizard's way and now needs to escape from the room full of dangerous and chaotic magical accidents. 
+The Magic Workshop is an story about Ben, who was an ordinary bank clerk and the Wizard lived in strange house. Ben got in Wizard's way and now needs to escape from the room full of dangerous and chaotic magical accidents. 
 
 ## Features:
 
